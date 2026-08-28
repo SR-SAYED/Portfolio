@@ -907,6 +907,8 @@ footer p {
 
   .resume-section {
     padding-top: 30px;
+    scroll-margin-top: 70px;
+    padding-bottom: 120px;
   }
 
   .resume-banner {
