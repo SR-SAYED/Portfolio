@@ -14,7 +14,7 @@ function renderCertificate(certificate) {
 }
 
 function renderPortfolio(data) {
-  const { profile, stats, skills, experience, education, achievements, softSkills, languages, educationalCertificates, professionalCertificates = [] } = data;
+  const { profile, stats, skills, experience, education, achievements, softSkills, languages, technicalCertificates, professionalCertificates = [] } = data;
   document.title = `${profile.name} | ${profile.role}`;
   document.querySelector("link[rel='icon']").href = `${profile.favicon}?v=1`;
   document.querySelector("[data-intro]").textContent = profile.intro;
@@ -43,7 +43,7 @@ function renderPortfolio(data) {
   document.querySelector("[data-soft-skills]").innerHTML = softSkills.map((skill) => `<span>${skill}</span>`).join("");
   document.querySelector("[data-languages]").innerHTML = languages.map((language) => `<p>${language}</p>`).join("");
   document.querySelector("[data-achievements]").innerHTML = achievements.map((achievement) => `<article>${achievement}</article>`).join("");
-  document.querySelector("[data-educational-certificates]").innerHTML = educationalCertificates.map(renderCertificate).join("");
+  document.querySelector("[data-technical-certificates]").innerHTML = technicalCertificates.map(renderCertificate).join("");
   const professionalSection = document.querySelector(".professional-certificates");
   if (professionalCertificates.length) {
     document.querySelector("[data-professional-certificates]").innerHTML = professionalCertificates.map(renderCertificate).join("");
