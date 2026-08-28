@@ -1044,11 +1044,3 @@ footer p {
     gap: 8px;
   }
 }
-
-@media (max-width: 430px) {
-  .resume-section::after {
-    content: "";
-    display: block;
-    height: 100px;
-  }
-}
