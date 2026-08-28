@@ -78,6 +78,7 @@ main {
   margin-left: 7px;
   border-radius: 50%;
   background: var(--orange);
+  vertical-align: middle;
 }
 
 .site-nav {
