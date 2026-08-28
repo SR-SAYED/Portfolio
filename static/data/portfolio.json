@@ -1,0 +1,280 @@
+{
+  "profile": {
+    "name": "MD Sayedur Rahman",
+    "role": "DevOps Engineer & Cloud Enthusiast",
+    "location": "Mirpur-2, Mirpur, Dhaka, Bangladesh",
+    "email": "srsayed2677@gmail.com",
+    "phone": "+8801788790001",
+    "photo": "static/images/SR.jpg",
+    "favicon": "static/images/sr-icon.svg",
+    "summary": "DevOps Engineer with 3+ years of experience building secure, scalable, and highly available cloud and hybrid infrastructure. I turn complex operations into reliable, automated delivery using Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Jenkins, Linux, and observability tools.",
+    "resumes": [
+      {
+        "label": "CV Without Photo",
+        "file": "static/files/MD Sayedur Rahman.pdf"
+      },
+      {
+        "label": "CV With Photo",
+        "file": "static/files/MD Sayedur Rahman (P).pdf"
+      }
+    ],
+    "github": "https://github.com/SR-SAYED",
+    "linkedin": "https://www.linkedin.com/in/sayedurrahman01/",
+    "facebook": "https://web.facebook.com/sayedurrahman01/",
+    "instagram": "https://www.instagram.com/sayedur_rahman01/",
+    "intro": "I build resilient cloud platforms, automate delivery pipelines, and turn complex infrastructure into dependable systems that help teams move faster with confidence."
+  },
+  "stats": [
+    {
+      "value": "3+",
+      "label": "Years in DevOps"
+    },
+    {
+      "value": "60+",
+      "label": "Production Servers Managed"
+    },
+    {
+      "value": "20+",
+      "label": "Production Migrations"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud platforms",
+      "details": "AWS (EC2, S3, RDS/Aurora, ALB, Route 53, IAM), Azure, GCP, DigitalOcean",
+      "level": 85
+    },
+    {
+      "name": "DevOps & CI/CD",
+      "details": "Docker, Kubernetes, Docker Hub, GitHub Actions, Jenkins",
+      "level": 85
+    },
+    {
+      "name": "Infrastructure as Code",
+      "details": "Terraform, Ansible, AWS CloudFormation",
+      "level": 75
+    },
+    {
+      "name": "Monitoring & observability",
+      "details": "Prometheus, Grafana, Loki, Zabbix",
+      "level": 85
+    },
+    {
+      "name": "Linux & automation",
+      "details": "Ubuntu, CentOS, RHEL, Bash, PowerShell, Cron, Systemd",
+      "level": 85
+    },
+    {
+      "name": "Networking & security",
+      "details": "Nginx, Apache, DNS, VPC, SSL/TLS, RBAC, Firewalls",
+      "level": 80
+    }
+  ],
+  "experience": [
+    {
+      "role": "DevOps Engineer",
+      "company": "Sheba Platform Ltd · Full Time · Mohakhali, Dhaka",
+      "period": "January 2026 — Present",
+      "highlights": [
+        "Designed, deployed, and maintained scalable infrastructure across public cloud platforms and Linux.",
+        "Built and maintained automated CI/CD pipelines using GitHub Actions and Jenkins.",
+        "Managed containerized applications using Docker, Kubernetes, and Docker Hub.",
+        "Automated infrastructure provisioning and configuration using Terraform, Ansible, and Bash/Shell.",
+        "Executed production server migrations, infrastructure upgrades, database migrations, and deployments.",
+        "Implemented monitoring and observability using Prometheus, Grafana, Zabbix, and Loki.",
+        "Performed infrastructure hardening, security remediation, root-cause analysis, and performance optimization.",
+        "Collaborated with cross-functional teams to deliver secure, reliable, and highly available platforms."
+      ]
+    },
+    {
+      "role": "Deputy SOC Lead (Acting)",
+      "company": "Sheba Platform Ltd · Full Time · Jashore, Khulna",
+      "period": "July 2025 — December 2025",
+      "highlights": [
+        "Led day-to-day SOC operations and coordinated incident response for service continuity and SLA compliance.",
+        "Guided and mentored engineers in troubleshooting production, infrastructure, and security-related incidents.",
+        "Coordinated with vendors, development teams, and stakeholders to resolve critical operational issues efficiently.",
+        "Drove process improvements and automation initiatives to enhance operational efficiency and incident response."
+      ]
+    },
+    {
+      "role": "System Engineer (L1) — DevOps",
+      "company": "Sheba Platform Ltd · Full Time · Jashore, Khulna",
+      "period": "January 2025 — December 2025",
+      "highlights": [
+        "Managed production infrastructure using Docker, Kubernetes, Linux (Ubuntu), and cloud platforms.",
+        "Built and maintained automated CI/CD pipelines using GitHub Actions and Jenkins.",
+        "Automated infrastructure provisioning and configuration management using Terraform, Ansible, and Bash/Shell scripting.",
+        "Managed Docker, Kubernetes, and Docker Hub, including image versioning and registry management.",
+        "Managed cloud networking, storage, load balancing, DNS, SSL/TLS certificates, and infrastructure resources.",
+        "Implemented monitoring and observability using Prometheus, Grafana, and Zabbix.",
+        "Performed root-cause analysis and resolved production incidents to ensure platform reliability.",
+        "Collaborated with development and QA teams to support production releases, deployments, and platform improvements."
+      ]
+    },
+    {
+      "role": "Junior System Engineer — DevOps",
+      "company": "Sheba Platform Ltd · Full Time · Jashore, Khulna",
+      "period": "January 2024 — December 2024",
+      "highlights": [
+        "Deployed services and monitored infrastructure across development and production environments.",
+        "Built operational dashboards using Grafana, Apache Superset, and Metabase.",
+        "Configured monitoring and alerts for infrastructure, applications, transactions, and fraud events.",
+        "Troubleshot Linux, application, database, and network issues to minimize downtime.",
+        "Managed operational tickets and coordinated with vendors using ClickUp and gPlex.",
+        "Automated routine operational tasks using Bash/Shell scripting.",
+        "Supported incident management, root-cause analysis, and operational reporting."
+      ]
+    },
+    {
+      "role": "Trainee System Engineer",
+      "company": "Sheba Platform Ltd · Full Time · Jashore, Khulna",
+      "period": "July 2023 — December 2023",
+      "highlights": [
+        "Monitored production servers, applications, and infrastructure to ensure service availability.",
+        "Assisted in troubleshooting Linux, application, and basic network-related issues.",
+        "Performed log analysis and basic debugging to support incident resolution.",
+        "Coordinated with vendors and internal teams to track and resolve operational issues.",
+        "Assisted with application deployments and routine maintenance activities.",
+        "Learned DevOps fundamentals, Linux administration, cloud infrastructure, and CI/CD concepts."
+      ]
+    },
+    {
+      "role": "IT Support Engineer (Intern)",
+      "company": "Walton Digi-Tech Industries Ltd · Contract · Bashundhara R/A, Dhaka",
+      "period": "June 2022 — July 2022",
+      "highlights": [
+        "Provided technical support for Bangladesh Population and Housing Census 2022 device-monitoring initiatives.",
+        "Assisted in maintaining enterprise hardware and software systems."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Islamic University, Kushtia",
+      "program": "MSc in Computer Science & Engineering",
+      "period": "2023 — 2024"
+    },
+    {
+      "institution": "Bangladesh University of Business and Technology (BUBT)",
+      "program": "BSc in Computer Science & Engineering",
+      "period": "2018 — 2022"
+    },
+    {
+      "institution": "Satkhira Govt. College",
+      "program": "Science",
+      "period": "Apr 2015 — Mar 2017"
+    },
+    {
+      "institution": "Rasulpur High School, Satkhira",
+      "program": "Science",
+      "period": "Jan 2010 — Mar 2015"
+    }
+  ],
+  "achievements": [
+    "Managed and maintained 60+ production servers across AWS and other public cloud platforms, ensuring high availability and reliability.",
+    "Designed and implemented automated CI/CD pipelines for 50+ services using GitHub Actions and Jenkins.",
+    "Successfully modernized and migrated 20+ production servers and legacy applications with minimal downtime.",
+    "Performed server-to-server database migrations while preserving data integrity and continuity."
+  ],
+  "softSkills": [
+    "Leadership & Team Collaboration",
+    "Problem Solving & Analytical Thinking",
+    "Rapid Learning",
+    "Effective Communication",
+    "Grace Under Pressure",
+    "Knowledge Sharing"
+  ],
+  "languages": [
+    "English · Professional proficiency",
+    "Bangla · Native / full proficiency",
+    "Hindi · Basic / conversational"
+  ],
+  "professionalCertificates": [],
+  "educationalCertificates": [
+    {
+      "title": "C Programming",
+      "issuer": "Sololearn",
+      "image": "static/images/C.jpg",
+      "file": "static/files/Certificate (C).pdf"
+    },
+    {
+      "title": "C++ Programming",
+      "issuer": "Sololearn",
+      "image": "static/images/C++.jpg",
+      "file": "static/files/Certificate (C++).pdf"
+    },
+    {
+      "title": "Python for Beginners",
+      "issuer": "Sololearn",
+      "image": "static/images/PythonB.jpg",
+      "file": "static/files/Certificate (Python For Beginners).pdf"
+    },
+    {
+      "title": "Python Core",
+      "issuer": "Sololearn",
+      "image": "static/images/Python.jpg",
+      "file": "static/files/Certificate (Python Core).pdf"
+    },
+    {
+      "title": "Java Programming",
+      "issuer": "Sololearn",
+      "image": "static/images/Java.jpg",
+      "file": "static/files/Certificate (Java).pdf"
+    },
+    {
+      "title": "PHP",
+      "issuer": "Sololearn",
+      "image": "static/images/PHP.jpg",
+      "file": "static/files/Certificate (PHP).pdf"
+    },
+    {
+      "title": "HTML",
+      "issuer": "Sololearn",
+      "image": "static/images/HTML.jpg",
+      "file": "static/files/Certificate (HTML).pdf"
+    },
+    {
+      "title": "CSS",
+      "issuer": "Sololearn",
+      "image": "static/images/CSS.jpg",
+      "file": "static/files/Certificate (CSS).pdf"
+    },
+    {
+      "title": "JavaScript",
+      "issuer": "Sololearn",
+      "image": "static/images/JavaScript.jpg",
+      "file": "static/files/Certificate (JavaScript).pdf"
+    },
+    {
+      "title": "Cyber Security",
+      "issuer": "Cybrary",
+      "image": "static/images/Cyber_Security.jpg",
+      "file": "static/files/Cyber Security.pdf"
+    },
+    {
+      "title": "CNN Image Captioning",
+      "issuer": "Conference Paper",
+      "image": "static/images/Certificate (Comparison of Different CNN Model used as Encoders for Image Captioning).jpg",
+      "file": "static/files/Certificate (Comparison of Different CNN Model used as Encoders for Image Captioning).pdf"
+    },
+    {
+      "title": "Customer Churn Prediction",
+      "issuer": "Conference Paper",
+      "image": "static/images/Certificate (To Predict Customer Churn By Using Different Algorithms).jpg",
+      "file": "static/files/Certificate (To Predict Customer Churn By Using Different Algorithms).pdf"
+    },
+    {
+      "title": "Bengali Image Captioning",
+      "issuer": "Conference Paper",
+      "image": "static/images/Certificate (Bahdanau Attention Based Bengali Image Caption Generation).jpg",
+      "file": "static/files/Certificate (Bahdanau Attention Based Bengali Image Caption Generation).pdf"
+    },
+    {
+      "title": "VMware Hands-On Lab",
+      "issuer": "VMware",
+      "image": "static/images/Certificate (VMware Hands-On Lab).jpg",
+      "file": "static/files/Certificate (VMware Hands-On Lab).pdf"
+    }
+  ]
+}

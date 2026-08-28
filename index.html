@@ -1,494 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Home - SR</title>
-    <link href="static/images/SR.jpg" rel="icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MD Sayedur Rahman — DevOps Engineer portfolio.">
+    <title>MD Sayedur Rahman | DevOps Engineer &amp; Cloud Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="static/images/sr-icon.svg?v=1">
+    <link rel="stylesheet" href="static/css/styles.css">
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href=""><b>MD Sayedur Rahman</b></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >CV</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="static/files/MD Sayedur Rahman.pdf"
-                    >Download CV</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="static/files/MD Sayedur Rahman (P).pdf"
-                    >Download CV (P)</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header class="site-header">
+      <a class="brand" href="#home">MD Sayedur Rahman</a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="#profile">Profile</a>
+        <a href="#career">Career</a>
+        <a href="#certificates">Certificates</a>
+      </nav>
+      <a class="button button-small header-cv" href="#resume">View Resume <span>↓</span></a>
+      <button class="menu-toggle" aria-label="Open Navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
 
-    <div class="container-fluid mt-0 px-0">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="static\images\1.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="static/images/2.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="static/images/3.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="static/images/4.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="static/images/5.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="static/images/6.jpg"
-              width="300"
-              height="600"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Open To Relocation</p>
+          <h1><span data-name></span><em>DevOps Engineer</em></h1>
+          <p class="hero-intro" data-intro></p>
+          <a class="button" href="#career">Explore Career <span>↓</span></a>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div class="class container">
-      <h2 class="text-center my-1 py-3">Me At A Glance</h2>
-      <hr />
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/C.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language C<br />From Sololearn
-              </p>
-              <a href="static/files/Certificate (C).pdf" class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="portrait-frame"><img data-photo src="static/images/SR.jpg" alt="MD Sayedur Rahman"></div>
+          <div class="availability-card"><span class="pulse"></span><div><small>Current Location</small><strong data-location></strong></div></div>
         </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/C++.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language C++<br />From Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (C++).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/PythonB.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language Python (Beginners)<br />From
-                Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (Python For Beginners).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/Python.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language Python (Core)<br />From
-                Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (Python Core).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/Java.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language Java<br />From Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (Java).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/PHP.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language PHP<br />From Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (PHP).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/HTML.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language HTML<br />From Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (HTML).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img src="static/images/CSS.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language CSS<br />From Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (CSS).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/JavaScript.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Programming Language JavaScript<br />From
-                Sololearn
-              </p>
-              <a
-                href="static/files/Certificate (JavaScript).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/Certificate (Comparison of Different CNN Model used as Encoders for Image Captioning).jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br /><b>Conference Paper Title:</b> Comparison of
-                Different CNN Model used as Encoders for Image Captioning<br />DOI:
-                <a href="https://ieeexplore.ieee.org/document/9655846"
-                  >10.1109/ICDABI53623.2021.9655846</a
-                >
-              </p>
-              <a
-                href="static/files/Certificate (Comparison of Different CNN Model used as Encoders for Image Captioning).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/Cyber_Security.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />Cyber Security<br />From Cybrary
-              </p>
-              <a href="static/files/Cyber Security.pdf" class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/StopStalk.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                <b>Programmer</b><br /><b>Problem Solver</b><br />From Online
-                Platform
-              </p>
-              <a
-                href="https://www.stopstalk.com/user/profile/Sayedur_Rahman"
-                class="btn btn-success"
-                >Visit Profile</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/Certificate (To Predict Customer Churn By Using Different Algorithms).jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br /><b>Conference Paper Title:</b> To Predict
-                Customer Churn By Using Different Algorithms<br />DOI:
-                <a href="https://ieeexplore.ieee.org/document/9765155"
-                  >10.1109/DASA54658.2022.9765155</a
-                >
-              </p>
-              <a
-                href="static/files/Certificate (To Predict Customer Churn By Using Different Algorithms).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static/images/Certificate (Bahdanau Attention Based Bengali Image Caption Generation).jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br /><b>Conference Paper Title:</b> Bahdanau
-                Attention Based Bengali Image Caption Generation<br />DOI:
-                <a href="https://ieeexplore.ieee.org/document/9765268"
-                  >10.1109/DASA54658.2022.9765268</a
-                >
-              </p>
-              <a
-                href="static/files/Certificate (Bahdanau Attention Based Bengali Image Caption Generation).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 22rem">
-            <img
-              src="static\images\Certificate (VMware Hands-On Lab).jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Certificate<br />VMware Hands-On Lab <br />From VMware
-              </p>
-              <a
-                href="static/files/Certificate (VMware Hands-On Lab).pdf"
-                class="btn btn-success"
-                >Download</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-    </div>
-    <footer class="text-center text-light bg-dark py-3 mt-5">
-      <div class="center box">
-        <br />
-        <h2>SR</h2>
-        <div class="content">
-          <p class="text-center">
-            Dhaka, Bangladesh<br />Phone: ++8801788790001<br />Email:
-            srsayed2677@gmail.com
-          </p>
-          <div class="social">
-            <a class="" href="https://web.facebook.com/sayedurrahman01/"
-              ><img
-                src="static/images/Facebook.png"
-                class="height-35"
-                alt="Facebook"
-            /></a>
-            <a class="" href="https://twitter.com/sayedurrahman02"
-              ><img
-                src="static/images/Twitter.png"
-                class="height-35"
-                alt="Twitter"
-            /></a>
-            <a class="" href="https://www.instagram.com/sayedur_rahman01/"
-              ><img
-                src="static/images/Instagram.png"
-                class="height-35"
-                alt="Instagram"
-            /></a>
-          </div>
-        </div>
-        <br />
-        <p>Copyright &copy; 2025<br />MD Sayedur Rahman | All Right Reserved</p>
-      </div>
-    </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
+        <aside class="hero-contact reveal">
+          <p>Contact Details</p><a data-phone href="#"></a><a data-email href="#"></a><a data-linkedin href="#" target="_blank">LinkedIn ↗</a><a data-github href="#" target="_blank">GitHub ↗</a><a data-facebook href="#" target="_blank">Facebook ↗</a><a data-instagram href="#" target="_blank">Instagram ↗</a>
+        </aside>
+      </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
+      <section class="stats-band" aria-label="Career Highlights"><div class="stats" data-stats></div></section>
+
+      <section class="section" id="profile">
+        <div class="section-heading reveal"><p class="eyebrow">Professional Profile</p><h2>Reliable Infrastructure <span>•</span> Thoughtful Automation <span>•</span> Better Delivery</h2></div>
+        <div class="profile-summary reveal"><p data-summary></p><p>I focus on the systems behind successful products: secure cloud infrastructure, repeatable deployments, practical monitoring, and calm incident response.</p></div>
+        <div class="skills-grid" data-skills></div>
+        <div class="people-skills reveal"><div><h3>Core Strengths</h3><div class="pill-list" data-soft-skills></div></div><div><h3>Languages</h3><div class="language-list" data-languages></div></div></div>
+      </section>
+
+      <section class="section career-section" id="career">
+        <div class="section-heading reveal"><p class="eyebrow">Career Journey</p><h2>Experience <span>•</span> Education <span>•</span> Proven Results</h2></div>
+        <div class="timeline-grid"><div class="timeline-column reveal"><h3>Professional Experience</h3><div class="timeline" data-experience></div></div><div class="timeline-column reveal"><h3>Education</h3><div class="timeline" data-education></div><h3 class="impact-title">Career Highlights</h3><div class="compact-achievements" data-achievements></div></div></div>
+      </section>
+
+      <section class="section certificates-section" id="certificates">
+        <div class="section-heading reveal"><p class="eyebrow">Certifications</p><h2>Educational <span>•</span> Professional</h2></div>
+        <div class="certificate-group reveal">
+          <h3>Educational Certificates</h3>
+          <div class="certificate-grid" data-educational-certificates></div>
+        </div>
+        <div class="certificate-group professional-certificates reveal" hidden>
+          <h3>Professional Certificates</h3>
+          <div class="certificate-grid" data-professional-certificates></div>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resume"><div class="resume-banner reveal"><p class="eyebrow">Resume</p><h2>Choose The CV That Suits You.</h2><p>Two professional formats are available for viewing or downloading.</p><div data-cv-links></div></div></section>
+    </main>
+
+    <footer><p>© <span data-year></span> <span data-name></span> | All Rights Reserved.</p></footer>
+    <script src="static/js/portfolio.js"></script>
   </body>
 </html>
