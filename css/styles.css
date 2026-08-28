@@ -907,8 +907,6 @@ footer p {
 
   .resume-section {
     padding-top: 30px;
-    scroll-margin-top: 70px;
-    padding-bottom: 120px;
   }
 
   .resume-banner {
@@ -1044,5 +1042,13 @@ footer p {
 
   .certificate-grid {
     gap: 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .resume-section::after {
+    content: "";
+    display: block;
+    height: 100px;
   }
 }
