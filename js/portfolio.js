@@ -72,6 +72,12 @@ async function init() {
     menu.classList.remove("open");
     menuButton.setAttribute("aria-expanded", "false");
   }));
+  document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    }
+  });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
