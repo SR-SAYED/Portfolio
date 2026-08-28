@@ -54,7 +54,7 @@ function renderPortfolio(data) {
 
 async function init() {
   try {
-    const response = await fetch("static/data/portfolio.json");
+    const response = await fetch("data/portfolio.json");
     if (!response.ok) throw new Error("Portfolio data could not be loaded.");
     renderPortfolio(await response.json());
   } catch (error) {
