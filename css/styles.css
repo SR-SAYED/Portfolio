@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -165,7 +166,7 @@ main {
   gap: 35px;
   min-width: 0;
   min-height: 620px;
-  padding-top: 65px;
+  padding-top: 35px;
   padding-bottom: 145px;
 }
 
@@ -205,7 +206,7 @@ main {
 .hero-visual {
   position: relative;
   display: grid;
-  height: 480px;
+  height: 440px;
   min-width: 0;
   place-items: center;
 }
@@ -251,7 +252,7 @@ main {
 .availability-card {
   position: absolute;
   z-index: 2;
-  bottom: 36px;
+  bottom: 18px;
   left: 0;
   display: flex;
   gap: 10px;
@@ -304,6 +305,7 @@ main {
 }
 
 .hero-contact a {
+  min-width: 0;
   padding: 7px 10px;
   border-radius: 999px;
   background: #eef1ec;
@@ -692,12 +694,11 @@ footer p {
   transform: none;
 }
 
-
-/* =========================
-   MOBILE
-   ========================= */
-
 @media (max-width: 760px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
   .site-header {
     left: 0;
     width: 100%;
@@ -727,6 +728,7 @@ footer p {
   .menu-toggle {
     display: block;
     flex: 0 0 auto;
+    padding: 4px;
   }
 
   .site-nav {
@@ -760,8 +762,8 @@ footer p {
     max-width: 100%;
     min-width: 0;
     min-height: 0;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 18px;
+    padding-bottom: 0;
   }
 
   .hero-copy {
@@ -792,7 +794,7 @@ footer p {
     width: 100%;
     height: 320px;
     min-height: 320px;
-    margin-top: 25px;
+    margin-top: 20px;
     overflow: visible;
   }
 
@@ -826,7 +828,7 @@ footer p {
     z-index: 4;
     width: 100%;
     max-width: 100%;
-    margin-top: 24px;
+    margin-top: 18px;
     padding: 14px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -840,11 +842,12 @@ footer p {
   .hero-contact a {
     min-width: 0;
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .stats {
@@ -925,6 +928,7 @@ footer p {
     padding: 13px 0;
     border-top: 1px solid #51645e;
     border-left: 0;
+    overflow-wrap: anywhere;
   }
 
   .resume-download a:first-child {
@@ -942,11 +946,6 @@ footer p {
     transform: none;
   }
 }
-
-
-/* =========================
-   SMALL PHONES
-   ========================= */
 
 @media (max-width: 430px) {
   .site-header {
@@ -968,7 +967,7 @@ footer p {
   }
 
   .hero {
-    padding-top: 24px;
+    padding-top: 16px;
   }
 
   .hero h1 span {
@@ -986,7 +985,7 @@ footer p {
   .hero-visual {
     height: 300px;
     min-height: 300px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .portrait-frame {
@@ -1014,13 +1013,13 @@ footer p {
   }
 
   .hero-contact {
-    margin-top: 20px;
+    margin-top: 16px;
     padding: 12px;
   }
 
   .hero-contact a {
     padding: 7px 5px;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .stats {
