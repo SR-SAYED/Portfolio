@@ -10,11 +10,11 @@
     "summary": "DevOps Engineer with 3+ years of experience building secure, scalable, and highly available cloud and hybrid infrastructure. I turn complex operations into reliable, automated delivery using Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Jenkins, Linux, and observability tools.",
     "resumes": [
       {
-        "label": "CV Without Photo",
+        "label": "Resume Without Photo",
         "file": "static/files/MD Sayedur Rahman.pdf"
       },
       {
-        "label": "CV With Photo",
+        "label": "Resume With Photo",
         "file": "static/files/MD Sayedur Rahman (P).pdf"
       }
     ],
