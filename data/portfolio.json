@@ -153,22 +153,26 @@
     {
       "institution": "Islamic University, Kushtia",
       "program": "MSc in Computer Science & Engineering",
+      "cgpa": "3.35 / 4",
       "period": "2023 — 2024"
     },
     {
       "institution": "Bangladesh University of Business and Technology (BUBT)",
       "program": "BSc in Computer Science & Engineering",
+      "cgpa": "3.87 / 4",
       "period": "2018 — 2022"
     },
     {
       "institution": "Satkhira Govt. College",
-      "program": "Science",
-      "period": "Apr 2015 — Mar 2017"
+      "program": "Higher Secondary Certificate (HSC)",
+      "cgpa": "4.00 / 5",
+      "period": "2015 — 2017"
     },
     {
       "institution": "Rasulpur High School, Satkhira",
-      "program": "Science",
-      "period": "Jan 2010 — Mar 2015"
+      "program": "Secondary School Certificate (SSC)",
+      "cgpa": "5.00 / 5",
+      "period": "2010 — 2015"
     }
   ],
   "achievements": [

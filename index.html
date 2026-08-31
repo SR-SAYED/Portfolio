@@ -1,76 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MD Sayedur Rahman — DevOps Engineer portfolio.">
-    <title>MD Sayedur Rahman | DevOps Engineer &amp; Cloud Enthusiast</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="static/images/sr-icon.svg?v=1">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home">MD Sayedur Rahman</a>
-      <nav class="site-nav" aria-label="Primary Navigation">
-        <a href="#profile">Profile</a>
-        <a href="#career">Career</a>
-        <a href="#certificates">Certificates</a>
-      </nav>
-      <a class="button button-small header-cv" href="#resume">View Resume <span>↓</span></a>
-      <button class="menu-toggle" aria-label="Open Navigation" aria-expanded="false"><span></span><span></span></button>
-    </header>
 
-    <main>
-      <section class="hero section" id="home">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Open To Relocation</p>
-          <h1><span data-name></span><em>DevOps Engineer</em></h1>
-          <p class="hero-intro" data-intro></p>
-          <a class="button" href="#career">Explore Career <span>↓</span></a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MD Sayedur Rahman — DevOps Engineer portfolio.">
+  <title>MD Sayedur Rahman | DevOps Engineer &amp; Cloud Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="static/images/sr-icon.svg?v=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">MD Sayedur Rahman</a>
+    <nav class="site-nav" aria-label="Primary Navigation">
+      <a href="#profile">Profile</a>
+      <a href="#career">Career</a>
+      <a href="#certificates">Certificates</a>
+    </nav>
+    <a class="button button-small header-cv" href="#resume">View Resume <span>↓</span></a>
+    <button class="menu-toggle" aria-label="Open Navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <h1><span data-name></span><em>DevOps Engineer</em></h1>
+        <p class="hero-intro" data-intro></p>
+        <div class="hero-relocation">
+          <span class="hero-relocation-dot"></span>
+          <span>Open To Relocation</span>
         </div>
-        <div class="hero-visual reveal">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="portrait-frame"><img data-photo src="static/images/SR.jpg" alt="MD Sayedur Rahman"></div>
-          <div class="availability-card"><span class="pulse"></span><div><small>Current Location</small><strong data-location></strong></div></div>
+        <div class="hero-availability">
+          <span class="hero-availability-dot"></span>
+          <div>
+            <small>Available For</small>
+            <strong>DevOps &amp; Cloud Engineering Opportunities</strong>
+          </div>
         </div>
-        <aside class="hero-contact reveal">
-          <p>Contact Details</p><a data-phone href="#"></a><a data-email href="#"></a><a data-linkedin href="#" target="_blank">LinkedIn ↗</a><a data-github href="#" target="_blank">GitHub ↗</a><a data-facebook href="#" target="_blank">Facebook ↗</a><a data-instagram href="#" target="_blank">Instagram ↗</a>
-        </aside>
-      </section>
-
-      <section class="stats-band" aria-label="Career Highlights"><div class="stats" data-stats></div></section>
-
-      <section class="section" id="profile">
-        <div class="section-heading reveal"><p class="eyebrow">Professional Profile</p><h2>Reliable Infrastructure <span>•</span> Thoughtful Automation <span>•</span> Better Delivery</h2></div>
-        <div class="profile-summary reveal"><p data-summary></p><p>I focus on the systems behind successful products: secure cloud infrastructure, repeatable deployments, practical monitoring, and calm incident response.</p></div>
-        <div class="skills-grid" data-skills></div>
-        <div class="people-skills reveal"><div><h3>Core Strengths</h3><div class="pill-list" data-soft-skills></div></div><div><h3>Languages</h3><div class="language-list" data-languages></div></div></div>
-      </section>
-
-      <section class="section career-section" id="career">
-        <div class="section-heading reveal"><p class="eyebrow">Career Journey</p><h2>Experience <span>•</span> Education <span>•</span> Proven Results</h2></div>
-        <div class="timeline-grid"><div class="timeline-column reveal"><h3>Professional Experience</h3><div class="timeline" data-experience></div></div><div class="timeline-column reveal"><h3>Education</h3><div class="timeline" data-education></div><h3 class="impact-title">Career Highlights</h3><div class="compact-achievements" data-achievements></div></div></div>
-      </section>
-
-      <section class="section certificates-section" id="certificates">
-        <div class="section-heading reveal"><p class="eyebrow">Certifications</p><h2>Professional <span>•</span> Technical</h2></div>
-        <div class="certificate-group professional-certificates reveal" hidden>
-          <h3>Professional Certificates</h3>
-          <div class="certificate-grid" data-professional-certificates></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-frame"><img data-photo src="static/images/SR.jpg" alt="MD Sayedur Rahman"></div>
+        <div class="availability-card"><span class="pulse"></span>
+          <div><small>Current Location</small><strong data-location></strong></div>
         </div>
-        <div class="certificate-group reveal">
-          <h3>Technical Certificates</h3>
-          <div class="certificate-grid" data-technical-certificates></div>
+      </div>
+      <aside class="hero-contact reveal">
+        <p>Contact Details</p><a data-phone href="#"></a><a data-email href="#"></a><a data-linkedin href="#"
+          target="_blank">LinkedIn ↗</a><a data-github href="#" target="_blank">GitHub ↗</a><a data-facebook href="#"
+          target="_blank">Facebook ↗</a><a data-instagram href="#" target="_blank">Instagram ↗</a>
+      </aside>
+    </section>
+
+    <section class="stats-band" aria-label="Career Highlights">
+      <div class="stats" data-stats></div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Professional Profile</p>
+        <h2>Reliable Infrastructure <span>•</span> Thoughtful Automation <span>•</span> Better Delivery</h2>
+      </div>
+      <div class="profile-summary reveal">
+        <p data-summary></p>
+        <p>I focus on the systems behind successful products: secure cloud infrastructure, repeatable deployments,
+          practical monitoring, and calm incident response.</p>
+      </div>
+      <div class="skills-grid" data-skills></div>
+      <div class="people-skills reveal">
+        <div>
+          <h3>Core Strengths</h3>
+          <div class="pill-list" data-soft-skills></div>
         </div>
-      </section>
+        <div>
+          <h3>Languages</h3>
+          <div class="language-list" data-languages></div>
+        </div>
+      </div>
+    </section>
 
-      <section class="section resume-section" id="resume"><div class="resume-banner reveal"><p class="eyebrow">Resume</p><h2>Choose What You Prefer.</h2><p>Available for viewing or downloading.</p><div data-cv-links></div></div></section>
-    </main>
+    <section class="section career-section" id="career">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Career Journey</p>
+        <h2>Experience <span>•</span> Education <span>•</span> Proven Results</h2>
+      </div>
+      <div class="timeline-grid">
+        <div class="timeline-column reveal">
+          <h3>Professional Experience</h3>
+          <div class="timeline" data-experience></div>
+        </div>
+        <div class="timeline-column reveal">
+          <h3>Education</h3>
+          <div class="timeline" data-education></div>
+          <h3 class="impact-title">Career Highlights</h3>
+          <div class="compact-achievements" data-achievements></div>
+        </div>
+      </div>
+    </section>
 
-    <footer><p>© <span data-year></span> | <span data-name></span> | All Rights Reserved</p></footer>
-    <script src="js/portfolio.js"></script>
-  </body>
+    <section class="section certificates-section" id="certificates">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Certifications</p>
+        <h2>Professional <span>•</span> Technical</h2>
+      </div>
+      <div class="certificate-group professional-certificates reveal" hidden>
+        <h3>Professional Certificates</h3>
+        <div class="certificate-grid" data-professional-certificates></div>
+      </div>
+      <div class="certificate-group reveal">
+        <h3>Technical Certificates</h3>
+        <div class="certificate-grid" data-technical-certificates></div>
+      </div>
+    </section>
+
+    <section class="section resume-section" id="resume">
+      <div class="resume-banner reveal">
+        <p class="eyebrow">Resume</p>
+        <h2>Choose What You Prefer.</h2>
+        <p>Available for viewing or downloading.</p>
+        <div data-cv-links></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span data-year></span> | <span data-name></span> | All Rights Reserved</p>
+  </footer>
+  <script src="js/portfolio.js"></script>
+</body>
+
 </html>

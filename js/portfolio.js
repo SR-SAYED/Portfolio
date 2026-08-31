@@ -4,8 +4,14 @@ function renderTimeline(items, type) {
   return items.map((item) => {
     const title = type === "experience" ? item.role : item.institution;
     const subtitle = type === "experience" ? item.company : item.program;
-    const highlights = item.highlights ? `<ul>${item.highlights.map((highlight) => `<li>${highlight}</li>`).join("")}</ul>` : "";
-    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p><time>${item.period}</time>${highlights}</article>`;
+    const highlights = item.highlights
+      ? `<ul>${item.highlights.map((highlight) => `<li>${highlight}</li>`).join("")}</ul>`
+      : "";
+    const cgpa = type === "education" && item.cgpa
+      ? `<span class="education-cgpa">CGPA ${item.cgpa}</span>`
+      : "";
+
+    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p><time>${item.period}</time>${cgpa}${highlights}</article>`;
   }).join("");
 }
 
