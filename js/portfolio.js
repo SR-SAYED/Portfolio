@@ -8,11 +8,10 @@ function renderTimeline(items, type) {
       ? `<ul>${item.highlights.map((highlight) => `<li>${highlight}</li>`).join("")}</ul>`
       : "";
     const cgpa = type === "education" && item.cgpa
-      ? `<span class="education-cgpa">CGPA ${item.cgpa}</span>`
+      ? `<span class="education-cgpa">CGPA: ${item.cgpa}</span>`
       : "";
 
-    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p><time>${item.period}</time>${cgpa}${highlights}</article>`;
-  }).join("");
+    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p>${cgpa}<time>${item.period}</time>${highlights}</article>`;  }).join("");
 }
 
 function renderCertificate(certificate) {
