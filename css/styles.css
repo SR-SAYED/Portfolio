@@ -378,7 +378,6 @@ main {
   box-shadow: 0 12px 30px rgba(20, 33, 30, .08);
 }
 
-/* Contact Details stays as ONE full-width line */
 .hero-contact p {
   width: 100%;
   margin: 0 0 2px;
@@ -388,7 +387,6 @@ main {
   text-transform: uppercase;
 }
 
-/* All contact items remain on the same row on desktop */
 .hero-contact a {
   min-width: 0;
   padding: 7px 10px;
@@ -876,7 +874,7 @@ footer p {
   .section {
     width: 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: 20px 20px;
   }
 
   /* =========================
@@ -892,7 +890,7 @@ footer p {
     max-width: 100%;
     min-width: 0;
     min-height: 0;
-    padding-top: 16px;
+    padding-top: 10px;
     padding-bottom: 20px;
   }
 
@@ -939,7 +937,6 @@ footer p {
     font-size: 11px;
   }
 
-  /* Picture + orbit moved slightly lower */
   .hero-visual {
     width: 100%;
     height: 320px;
@@ -1044,7 +1041,7 @@ footer p {
   }
 
   .timeline-column + .timeline-column {
-    margin-top: 45px;
+    margin-top: -20px;
   }
 
   .career-section,
@@ -1052,10 +1049,8 @@ footer p {
     width: 100%;
     max-width: none;
     min-width: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px;
   }
-
   .certificate-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -1071,7 +1066,7 @@ footer p {
   ========================= */
 
   .resume-section {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 
   .resume-banner {
@@ -1162,7 +1157,6 @@ footer p {
     margin-top: 9px;
   }
 
-  /* Picture + orbit moved slightly lower */
   .hero-visual {
     height: 300px;
     min-height: 300px;
@@ -1193,7 +1187,6 @@ footer p {
     font-size: 11px;
   }
 
-  /* Same contact spacing */
   .hero-contact {
     margin-top: 30px;
     padding: 12px;
