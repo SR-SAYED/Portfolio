@@ -92,4 +92,27 @@ async function init() {
   selectAll(".reveal").forEach((element) => observer.observe(element));
 }
 
+const scrollButton = document.querySelector(".scroll-direction");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+  if (currentScrollY > lastScrollY) {
+    scrollButton.textContent = "↓";
+    scrollButton.setAttribute("aria-label", "Scroll down");
+  } else if (currentScrollY < lastScrollY) {
+    scrollButton.textContent = "↑";
+    scrollButton.setAttribute("aria-label", "Scroll up");
+  }
+  lastScrollY = currentScrollY;
+}, { passive: true });
+
+scrollButton.addEventListener("click", () => {
+  if (scrollButton.textContent === "↑") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+  }
+});
+
 init();
