@@ -131,10 +131,13 @@ main {
   align-items: center;
   gap: 16px;
   padding: 13px 19px;
+
   border: 1px solid var(--ink);
   border-radius: 999px;
+
   background: var(--ink);
   color: white;
+
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
@@ -193,6 +196,7 @@ main {
 
   min-width: 0;
   min-height: 0;
+
   padding-top: var(--space-property);
   padding-bottom: 110px;
 }
@@ -206,6 +210,7 @@ main {
 .hero h1 {
   max-width: 700px;
   margin: 0;
+
   letter-spacing: -0.075em;
   line-height: 1.03;
 }
@@ -218,6 +223,7 @@ main {
 .hero h1 em {
   display: block;
   margin-top: 7px;
+
   color: var(--orange);
   font-family: Georgia, serif;
   font-size: clamp(37px, 4vw, 62px);
@@ -227,6 +233,7 @@ main {
 .hero-intro {
   max-width: 535px;
   margin: var(--space-property) 0 0;
+
   color: var(--muted);
   font-size: 18px;
   line-height: 1.7;
@@ -236,6 +243,7 @@ main {
   display: flex;
   align-items: center;
   gap: 9px;
+
   width: fit-content;
   margin-top: var(--space-property);
 
@@ -249,6 +257,7 @@ main {
   width: 7px;
   height: 7px;
   flex: 0 0 auto;
+
   border-radius: 50%;
   background: var(--green);
   box-shadow: 0 0 0 4px rgba(103, 182, 68, 0.14);
@@ -264,6 +273,7 @@ main {
   padding: 12px 16px;
 
   border: 1px solid rgba(255, 107, 53, 0.25);
+
   background: linear-gradient(
     135deg,
     rgba(255, 107, 53, 0.08),
@@ -275,6 +285,7 @@ main {
   width: 8px;
   height: 8px;
   flex: 0 0 auto;
+
   border-radius: 50%;
   background: var(--orange);
   box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12);
@@ -283,6 +294,7 @@ main {
 .hero-availability small {
   display: block;
   margin-bottom: 3px;
+
   color: var(--muted);
   font: 10px var(--mono);
   letter-spacing: 0.06em;
@@ -317,14 +329,17 @@ main {
   height: 340px;
 
   overflow: hidden;
+
   border: 5px solid var(--white);
   border-radius: 50%;
+
   background: #c8d8d1;
 }
 
 .portrait-frame img {
   width: 100%;
   height: 100%;
+
   object-fit: contain;
   object-position: center;
 }
@@ -336,6 +351,7 @@ main {
 
   border: 1px solid #bfc9c3;
   border-radius: 50%;
+
   pointer-events: none;
 
   transform: translate(-50%, -50%);
@@ -360,6 +376,7 @@ main {
 .availability-card {
   position: absolute;
   z-index: 2;
+
   bottom: 30px;
   left: 0;
 
@@ -368,6 +385,7 @@ main {
   gap: 10px;
 
   padding: 14px 17px;
+
   transform: translateX(-50px);
 
   background: var(--white);
@@ -388,6 +406,7 @@ main {
   width: 8px;
   height: 8px;
   flex: 0 0 auto;
+
   border-radius: 50%;
   background: var(--green);
 }
@@ -399,6 +418,7 @@ main {
 .hero-contact {
   position: absolute;
   z-index: 3;
+
   bottom: 25px;
   left: 34px;
 
@@ -479,6 +499,7 @@ main {
 
 .stat strong {
   display: block;
+
   color: var(--lime);
   font-size: 31px;
   letter-spacing: -0.07em;
@@ -507,6 +528,7 @@ main {
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 1.22;
+
   text-wrap: balance;
 }
 
@@ -528,6 +550,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
+
   background: #cfd7cf;
 }
 
@@ -597,8 +620,10 @@ main {
 
 .pill-list span {
   padding: 5px 9px;
+
   border: 1px solid #d9dfd8;
   border-radius: 999px;
+
   background: #f6f7f3;
   font-size: 11px;
 }
@@ -701,6 +726,7 @@ main {
 .impact-title {
   margin: 35px 0 18px;
   padding: 25px 0 12px;
+
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -712,6 +738,7 @@ main {
 
 .compact-achievements article {
   padding: 10px 0;
+
   border-bottom: 1px solid var(--line);
 
   color: var(--muted);
@@ -735,6 +762,7 @@ main {
 .professional-certificates {
   margin-top: 28px;
   padding-top: 22px;
+
   border-top: 1px solid #cfd7cf;
 }
 
@@ -742,6 +770,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
+
   min-width: 0;
 }
 
@@ -770,6 +799,7 @@ main {
 
 .certificate-card p {
   margin: 5px 0;
+
   color: var(--muted);
   font: 10px var(--mono);
 }
@@ -810,6 +840,7 @@ main {
   font-size: clamp(29px, 3.5vw, 48px);
   letter-spacing: -0.055em;
   line-height: 1.18;
+
   text-wrap: balance;
 }
 
@@ -865,6 +896,7 @@ footer {
   padding: 20px 34px;
 
   border-top: 1px solid var(--line);
+
   text-align: center;
 }
 
@@ -891,7 +923,6 @@ footer p {
 
 /* =========================
    FLOATING BUTTONS
-   Same horizontal position
 ========================= */
 
 .scroll-direction,
@@ -899,8 +930,6 @@ footer p {
   position: fixed;
   z-index: 1100;
 }
-
-/* SCROLL BUTTON */
 
 .scroll-direction {
   right: 24px;
@@ -958,8 +987,6 @@ footer p {
 .scroll-direction:active {
   transform: scale(1);
 }
-
-/* WHATSAPP */
 
 .whatsapp-chat {
   right: 24px;
@@ -1066,12 +1093,15 @@ footer p {
   .availability-card {
     left: 50%;
     bottom: 20px;
+
     transform: translateX(-50%);
+
     white-space: nowrap;
   }
 
   .hero-contact {
     position: relative;
+
     left: auto;
     right: auto;
     bottom: auto;
@@ -1137,7 +1167,6 @@ footer p {
     padding: 13px;
   }
 
-  /* Same horizontal position */
   .scroll-direction {
     right: 18px;
     bottom: 24px;
@@ -1162,6 +1191,10 @@ footer p {
   :root {
     --space-property: 15px;
     --space-section: 15px;
+
+    --hero-name-gap: 7px;
+    --hero-main-gap: 15px;
+    --hero-relocation-gap: 7px;
   }
 
   html {
@@ -1227,6 +1260,10 @@ footer p {
     padding: var(--space-section) 20px;
   }
 
+  /* =========================
+     HERO MOBILE SPACING
+  ========================= */
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -1236,8 +1273,8 @@ footer p {
     width: 100%;
     max-width: 100%;
 
-    padding-top: var(--space-property);
-    padding-bottom: var(--space-section);
+    padding-top: var(--hero-main-gap);
+    padding-bottom: var(--hero-main-gap);
   }
 
   .hero-copy {
@@ -1247,32 +1284,46 @@ footer p {
 
   .hero h1 {
     max-width: 100%;
+    margin: 0;
   }
 
+  /* NAME → DEVOPS = 7px */
+
   .hero h1 span {
+    display: block;
+    margin: 0;
     font-size: clamp(38px, 11vw, 43px);
   }
 
   .hero h1 em {
-    margin-top: 7px;
+    display: block;
+    margin-top: var(--hero-name-gap);
     font-size: clamp(35px, 10vw, 39px);
   }
 
+  /* DEVOPS → INTRO = 15px */
+
   .hero-intro {
     max-width: 100%;
-    margin-top: var(--space-property);
+    margin-top: var(--hero-main-gap);
+
     font-size: 16px;
     line-height: 1.6;
   }
 
+  /* INTRO → RELOCATION = 15px */
+
   .hero-relocation {
-    margin-top: var(--space-property);
+    margin-top: var(--hero-main-gap);
   }
+
+  /* RELOCATION → AVAILABLE = 7px */
 
   .hero-availability {
     width: 100%;
     max-width: 100%;
-    margin-top: 10px;
+
+    margin-top: var(--hero-relocation-gap);
     padding: 12px 14px;
   }
 
@@ -1280,11 +1331,25 @@ footer p {
     font-size: 11px;
   }
 
+  /*
+    AVAILABLE → CIRCLE = 15px
+
+    The visual container is exactly the size
+    of the largest mobile orbit.
+  */
+
   .hero-visual {
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
     width: 100%;
-    height: 300px;
-    min-height: 300px;
-    margin-top: 6px;
+    height: 285px;
+    min-height: 285px;
+
+    margin-top: var(--hero-main-gap);
+
     overflow: visible;
   }
 
@@ -1303,15 +1368,25 @@ footer p {
     height: 285px;
   }
 
+  /*
+    CURRENT LOCATION is anchored at the
+    bottom of the visual area.
+  */
+
   .availability-card {
     left: 50%;
     bottom: 0;
+
     transform: translateX(-50%);
+
     white-space: nowrap;
   }
 
+  /* CURRENT LOCATION → CONTACT = 15px */
+
   .hero-contact {
     position: relative;
+
     left: auto;
     right: auto;
     bottom: auto;
@@ -1322,12 +1397,14 @@ footer p {
 
     width: 100%;
     max-width: 100%;
-    margin-top: var(--space-property);
+
+    margin-top: var(--hero-main-gap);
     padding: 14px;
   }
 
   .hero-contact p {
     grid-column: 1 / -1;
+
     width: 100%;
     margin: 0 0 2px;
   }
@@ -1346,6 +1423,12 @@ footer p {
     font-size: 10px;
     white-space: nowrap;
   }
+
+  /*
+    CONTACT → NEXT SECTION = 15px
+
+    This is controlled by hero bottom padding.
+  */
 
   .stats {
     width: 100%;
@@ -1408,8 +1491,10 @@ footer p {
 
   .resume-download {
     display: block;
+
     width: 100%;
     max-width: 100%;
+
     margin-top: 15px;
     padding: 11px 13px;
   }
@@ -1442,7 +1527,6 @@ footer p {
     transform: none;
   }
 
-  /* Same horizontal position */
   .scroll-direction {
     right: 14px;
     bottom: 18px;
@@ -1536,7 +1620,6 @@ footer p {
     gap: 6px;
   }
 
-  /* Same horizontal position */
   .scroll-direction {
     right: 9px;
     bottom: 15px;
