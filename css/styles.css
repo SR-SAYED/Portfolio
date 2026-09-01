@@ -9,6 +9,10 @@
   --green: #67b644;
   --sans: "Manrope", sans-serif;
   --mono: "DM Mono", monospace;
+
+  /* Desktop spacing */
+  --space-property: 25px;
+  --space-section: 25px;
 }
 
 * {
@@ -40,6 +44,9 @@ a {
   color: inherit;
 }
 
+
+/* HEADER */
+
 .site-header {
   position: fixed;
   top: 0;
@@ -48,19 +55,19 @@ a {
   width: 100%;
   max-width: 1280px;
   height: 84px;
-  transform: translateX(-50%);
   padding: 0 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  transform: translateX(-50%);
   background: rgba(245, 245, 239, .92);
   backdrop-filter: blur(14px);
 }
 
 main {
   width: 100%;
-  padding-top: 84px;
+  padding-top: 75px;
 }
 
 .brand {
@@ -113,8 +120,8 @@ main {
 
 .button {
   display: inline-flex;
-  gap: 16px;
   align-items: center;
+  gap: 16px;
   padding: 13px 19px;
   border: 1px solid var(--ink);
   border-radius: 999px;
@@ -135,12 +142,15 @@ main {
   font-size: 12px;
 }
 
+
+/* COMMON SECTION */
+
 .section {
   width: 100%;
   max-width: 1212px;
-  margin: auto;
-  padding: 34px;
   min-width: 0;
+  margin: auto;
+  padding: var(--space-section) 34px;
 }
 
 .eyebrow {
@@ -151,7 +161,7 @@ main {
   text-transform: uppercase;
 }
 
-.eyebrow>span {
+.eyebrow > span {
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -160,9 +170,8 @@ main {
   background: var(--orange);
 }
 
-/* =========================
-   HERO
-========================= */
+
+/* HERO */
 
 .hero {
   position: relative;
@@ -172,7 +181,7 @@ main {
   gap: 35px;
   min-width: 0;
   min-height: 0;
-  padding-top: 20px;
+  padding-top: var(--space-property);
   padding-bottom: 110px;
 }
 
@@ -182,7 +191,6 @@ main {
   flex-direction: column;
 }
 
-/* Name + DevOps Engineer */
 .hero h1 {
   max-width: 700px;
   margin: 0;
@@ -204,22 +212,20 @@ main {
   font-weight: 400;
 }
 
-/* Intro */
 .hero-intro {
   max-width: 535px;
-  margin: 24px 0 0;
+  margin: var(--space-property) 0 0;
   color: var(--muted);
   font-size: 18px;
   line-height: 1.7;
 }
 
-/* Open To Relocation */
 .hero-relocation {
   display: flex;
   align-items: center;
   gap: 9px;
   width: fit-content;
-  margin-top: 24px;
+  margin-top: var(--space-property);
   color: var(--muted);
   font: 500 11px var(--mono);
   letter-spacing: .04em;
@@ -235,7 +241,6 @@ main {
   box-shadow: 0 0 0 4px rgba(103, 182, 68, .14);
 }
 
-/* Available For */
 .hero-availability {
   display: flex;
   align-items: center;
@@ -244,15 +249,17 @@ main {
   margin-top: 10px;
   padding: 12px 16px;
   border: 1px solid rgba(255, 107, 53, .25);
-  background: linear-gradient(135deg,
-      rgba(255, 107, 53, .08),
-      rgba(217, 255, 90, .14));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 53, .08),
+    rgba(217, 255, 90, .14)
+  );
 }
 
 .hero-availability-dot {
-  flex: 0 0 auto;
   width: 8px;
   height: 8px;
+  flex: 0 0 auto;
   border-radius: 50%;
   background: var(--orange);
   box-shadow: 0 0 0 4px rgba(255, 107, 53, .12);
@@ -274,9 +281,8 @@ main {
   font-weight: 700;
 }
 
-/* =========================
-   HERO IMAGE
-========================= */
+
+/* HERO IMAGE */
 
 .hero-visual {
   position: relative;
@@ -324,20 +330,19 @@ main {
   border-color: rgba(255, 107, 53, .5);
   border-left-color: transparent;
   border-bottom-color: transparent;
-  transform: translate(-50%, -50%) rotate(-35deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* Current Location */
 .availability-card {
   position: absolute;
   z-index: 2;
   bottom: 30px;
   left: 0;
-  transform: translateX(-50px);
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
   padding: 14px 17px;
+  transform: translateX(-50px);
   background: var(--white);
   box-shadow: 0 14px 35px rgba(20, 33, 30, .1);
 }
@@ -353,16 +358,15 @@ main {
 }
 
 .pulse {
-  flex: 0 0 auto;
   width: 8px;
   height: 8px;
+  flex: 0 0 auto;
   border-radius: 50%;
   background: var(--green);
 }
 
-/* =========================
-   CONTACT
-========================= */
+
+/* CONTACT */
 
 .hero-contact {
   position: absolute;
@@ -404,9 +408,8 @@ main {
   color: var(--lime);
 }
 
-/* =========================
-   STATS
-========================= */
+
+/* STATS */
 
 .stats-band {
   width: 100%;
@@ -416,12 +419,12 @@ main {
 
 .stats {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
   max-width: 1212px;
+  min-width: 0;
   margin: auto;
   padding: 32px 34px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  min-width: 0;
 }
 
 .stat {
@@ -435,7 +438,7 @@ main {
 }
 
 .stat:last-child {
-  border: 0;
+  border-right: 0;
 }
 
 .stat strong {
@@ -450,9 +453,8 @@ main {
   font-size: 12px;
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+
+/* GENERAL SECTIONS */
 
 .section-heading {
   margin-bottom: 35px;
@@ -563,17 +565,18 @@ main {
   font-size: 12px;
 }
 
-/* =========================
-   CAREER
-========================= */
+
+/* CAREER */
 
 .career-section {
   width: 100%;
   max-width: none;
   min-width: 0;
-  background: var(--white);
-  padding-left: max(34px, calc((100% - 1212px) / 2 + 34px));
+  padding-top: var(--space-section);
   padding-right: max(34px, calc((100% - 1212px) / 2 + 34px));
+  padding-bottom: var(--space-section);
+  padding-left: max(34px, calc((100% - 1212px) / 2 + 34px));
+  background: var(--white);
 }
 
 .timeline-grid {
@@ -645,17 +648,18 @@ main {
   line-height: 1.55;
 }
 
-/* =========================
-   CERTIFICATES
-========================= */
+
+/* CERTIFICATES */
 
 .certificates-section {
   width: 100%;
   max-width: none;
   min-width: 0;
-  background: #f0f2ed;
-  padding-left: max(34px, calc((100% - 1212px) / 2 + 34px));
+  padding-top: var(--space-section);
   padding-right: max(34px, calc((100% - 1212px) / 2 + 34px));
+  padding-bottom: var(--space-section);
+  padding-left: max(34px, calc((100% - 1212px) / 2 + 34px));
+  background: #f0f2ed;
 }
 
 .certificate-group {
@@ -715,12 +719,12 @@ main {
   text-decoration: none;
 }
 
-/* =========================
-   RESUME
-========================= */
+
+/* RESUME */
 
 .resume-section {
-  padding-top: 35px;
+  padding-top: var(--space-section);
+  padding-bottom: var(--space-section);
 }
 
 .resume-banner {
@@ -744,7 +748,7 @@ main {
   text-wrap: balance;
 }
 
-.resume-banner>p {
+.resume-banner > p {
   color: #c2cbc6;
 }
 
@@ -780,9 +784,8 @@ main {
   float: right;
 }
 
-/* =========================
-   FOOTER
-========================= */
+
+/* FOOTER */
 
 footer {
   width: 100%;
@@ -799,9 +802,8 @@ footer p {
   font-size: 11px;
 }
 
-/* =========================
-   ANIMATION
-========================= */
+
+/* ANIMATION */
 
 .reveal {
   opacity: 0;
@@ -814,11 +816,81 @@ footer p {
   transform: none;
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+
+/* TABLET */
+
+@media (min-width: 761px) and (max-width: 1000px) {
+
+  :root {
+    --space-property: 10px;
+    --space-section: 20px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-top: var(--space-property);
+    padding-bottom: var(--space-section);
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    height: 420px;
+    min-height: 420px;
+    margin-top: var(--space-property);
+    overflow: visible;
+  }
+
+  .portrait-frame {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orbit-one {
+    width: 370px;
+    height: 370px;
+  }
+
+  .orbit-two {
+    width: 420px;
+    height: 420px;
+  }
+
+  .availability-card {
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .hero-contact {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 760px;
+    margin-top: 0;
+  }
+}
+
+
+/* MOBILE */
 
 @media (max-width: 760px) {
+
+  :root {
+    --space-property: 15px;
+    --space-section: 15px;
+  }
 
   html {
     scroll-padding-top: 70px;
@@ -829,13 +901,13 @@ footer p {
     width: 100%;
     max-width: none;
     height: 70px;
-    transform: none;
     padding: 0 20px;
+    transform: none;
     gap: 10px;
   }
 
   main {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .brand {
@@ -875,12 +947,11 @@ footer p {
   .section {
     width: 100%;
     max-width: 100%;
-    padding: 20px 20px;
+    padding: var(--space-section) 20px;
   }
 
-  /* =========================
-     MOBILE HERO
-  ========================= */
+
+  /* HERO */
 
   .hero {
     display: flex;
@@ -889,22 +960,17 @@ footer p {
     gap: 0;
     width: 100%;
     max-width: 100%;
-    min-width: 0;
-    min-height: 0;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: var(--space-property);
+    padding-bottom: var(--space-section);
   }
 
   .hero-copy {
     width: 100%;
     flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
   }
 
   .hero h1 {
     max-width: 100%;
-    margin: 0;
   }
 
   .hero h1 span {
@@ -918,13 +984,13 @@ footer p {
 
   .hero-intro {
     max-width: 100%;
-    margin: 20px 0 0;
+    margin-top: var(--space-property);
     font-size: 16px;
     line-height: 1.6;
   }
 
   .hero-relocation {
-    margin-top: 20px;
+    margin-top: var(--space-property);
   }
 
   .hero-availability {
@@ -942,7 +1008,7 @@ footer p {
     width: 100%;
     height: 320px;
     min-height: 320px;
-    margin-top: 15px;
+    margin-top: 8px;
     overflow: visible;
   }
 
@@ -963,21 +1029,22 @@ footer p {
 
   .availability-card {
     left: 50%;
-    bottom: 4px;
+    bottom: 0px;
     transform: translateX(-50%);
     white-space: nowrap;
   }
 
-  /* Contact */
+
+  /* CONTACT */
+
   .hero-contact {
     position: relative;
     left: auto;
     right: auto;
     bottom: auto;
-    z-index: 4;
     width: 100%;
     max-width: 100%;
-    margin-top: 28px;
+    margin-top: var(--space-property);
     padding: 14px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -991,8 +1058,8 @@ footer p {
   }
 
   .hero-contact a {
-    min-width: 0;
     width: 100%;
+    min-width: 0;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1001,9 +1068,8 @@ footer p {
     font-size: 10px;
   }
 
-  /* =========================
-     MOBILE STATS
-  ========================= */
+
+  /* STATS */
 
   .stats {
     width: 100%;
@@ -1026,9 +1092,8 @@ footer p {
     line-height: 1.2;
   }
 
-  /* =========================
-     MOBILE CONTENT
-  ========================= */
+
+  /* CONTENT */
 
   .skills-grid,
   .timeline-grid,
@@ -1037,11 +1102,11 @@ footer p {
   }
 
   .skill,
-  .people-skills>div {
+  .people-skills > div {
     min-width: 0;
   }
 
-  .timeline-column+.timeline-column {
+  .timeline-column + .timeline-column {
     margin-top: -20px;
   }
 
@@ -1049,8 +1114,7 @@ footer p {
   .certificates-section {
     width: 100%;
     max-width: none;
-    min-width: 0;
-    padding: 20px 20px;
+    padding: var(--space-section) 20px;
   }
 
   .certificate-grid {
@@ -1058,17 +1122,12 @@ footer p {
     gap: 10px;
   }
 
-  .certificate-card {
-    min-width: 0;
-    overflow: hidden;
-  }
 
-  /* =========================
-     MOBILE RESUME
-  ========================= */
+  /* RESUME */
 
   .resume-section {
-    padding-top: 20px;
+    padding-top: var(--space-section);
+    padding-bottom: var(--space-section);
   }
 
   .resume-banner {
@@ -1109,9 +1168,8 @@ footer p {
   }
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+
+/* SMALL MOBILE */
 
 @media (max-width: 430px) {
 
@@ -1133,11 +1191,6 @@ footer p {
     padding: 4px;
   }
 
-  .hero {
-    padding-top: 16px;
-    padding-bottom: 18px;
-  }
-
   .hero h1 span {
     font-size: 38px;
   }
@@ -1147,12 +1200,7 @@ footer p {
   }
 
   .hero-intro {
-    margin-top: 18px;
     font-size: 15px;
-  }
-
-  .hero-relocation {
-    margin-top: 18px;
   }
 
   .hero-availability {
@@ -1162,7 +1210,6 @@ footer p {
   .hero-visual {
     height: 300px;
     min-height: 300px;
-    margin-top: 20px;
   }
 
   .portrait-frame {
@@ -1180,9 +1227,8 @@ footer p {
     height: min(285px, 100%);
   }
 
-  .orbit-two {
-    width: min(285px, calc(100vw - 40px));
-    height: min(285px, calc(100vw - 40px));
+  .availability-card {
+    bottom: 0px;
   }
 
   .availability-card strong {
@@ -1190,7 +1236,6 @@ footer p {
   }
 
   .hero-contact {
-    margin-top: 30px;
     padding: 12px;
   }
 
@@ -1200,13 +1245,13 @@ footer p {
   }
 
   .stats {
-    padding-left: 12px;
     padding-right: 12px;
+    padding-left: 12px;
   }
 
   .stat {
-    padding-left: 6px;
     padding-right: 6px;
+    padding-left: 6px;
   }
 
   .stat strong {
