@@ -11,7 +11,8 @@ function renderTimeline(items, type) {
       ? `<span class="education-cgpa">CGPA: ${item.cgpa}</span>`
       : "";
 
-    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p>${cgpa}<time>${item.period}</time>${highlights}</article>`;  }).join("");
+    return `<article class="timeline-item"><h4>${title}</h4><p>${subtitle}</p>${cgpa}<time>${item.period}</time>${highlights}</article>`;
+  }).join("");
 }
 
 function renderCertificate(certificate) {
@@ -37,6 +38,7 @@ function renderPortfolio(data) {
     element.href = `tel:${profile.phone.replace(/[^+\d]/g, "")}`;
     element.textContent = profile.phone;
   });
+  selectAll("[data-whatsapp]").forEach((element) => { const whatsappNumber = profile.phone.replace(/\D/g, ""); element.href = `https://wa.me/${whatsappNumber}`; });
   ["github", "linkedin", "facebook", "instagram"].forEach((network) => {
     selectAll(`[data-${network}]`).forEach((element) => { element.href = profile[network]; });
   });
