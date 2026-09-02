@@ -944,6 +944,12 @@ footer p {
   padding: 0;
 
   border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
   border-radius: 50%;
 
   background: radial-gradient(
@@ -986,6 +992,11 @@ footer p {
 
 .scroll-direction:active {
   transform: scale(1);
+}
+
+.scroll-direction:focus,
+.scroll-direction:focus-visible {
+  outline: none;
 }
 
 .whatsapp-chat {

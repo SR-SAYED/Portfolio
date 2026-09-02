@@ -109,11 +109,19 @@ window.addEventListener("scroll", () => {
   lastScrollY = currentScrollY;
 }, { passive: true });
 
-scrollButton.addEventListener("click", () => {
+scrollButton.addEventListener("pointerdown", (event) => {
+  event.preventDefault();
+
   if (scrollButton.textContent === "↑") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   } else {
-    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth"
+    });
   }
 });
 
